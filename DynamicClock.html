@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <botton> Click me</botton><br></br>
+    <p id="showClock"> </p>
+    <script type="text/javascript">
+
+        var clock = setInterval(clocktiming,1000)
+
+        function clocktiming(){
+
+        
+
+
+        var d = new Date();
+        var Sarfraj = d.toLocalTimeString();
+        document.getElementById('showClock').innerHTML = Sarfraj;
+        }
+    </script>
+</body>
+</html>

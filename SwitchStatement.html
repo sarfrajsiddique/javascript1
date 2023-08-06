@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> Enter your chouce</h3>
+    <ul>
+        <li> Add </li>
+        <li> Sub </li>
+        <li> Mult </li>
+    </ul>
+    <br>
+    <form>
+        <input type="text" name="" id="choice">
+        <br>
+        <button onclick="myfun()">Click Me</button>
+
+    </form>
+    <script type="text/javascript">
+        function myfun(){
+            var choice = document.getElementById("choices")
+            value;
+            alert(choice);
+            switch(choice){
+                case "add" : var a =10;
+                           var b = 20;
+                           var sum = a+b;
+                           document.write("addition of two number is" +sum);
+                       case "sub" : var a =10;
+                                   var b = 20;
+                                  var sub = a-b;
+                                  document.write("substraction of two number is" +sub);
+                case "mult" : var a =10;
+                                  var b = 20;
+                                 var multp= a*b;
+                                 document.write("multiplication of two number is"+multp);
+                default : atert("not a volid input");
+            }
+
+        }
+    </script>
+</body>
+</html>
