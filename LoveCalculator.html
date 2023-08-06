@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <style>
-        body{
-background-image: linear-gradient(rgba(0,0,0,0,3),rgba(0,0,0,3)), url('https: //images .pexels .com/photos/ 1028725/pexels-1028725.jpeg');
-background-repeat: no-repeat;
-background-size: cover;
-background: center;
-width: 100%;
-height: 100vh;
-position: relative;
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0, 3), rgba(0, 0, 0, 3)), url('https: //images .pexels .com/photos/ 1028725/pexels-1028725.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: center;
+            width: 100%;
+            height: 100vh;
+            position: relative;
         }
-        header{
+
+        header {
             width: 100%;
             position: absolute;
             top: 50%;
@@ -24,43 +26,46 @@ position: relative;
         }
     </style>
 </head>
+
 <body>
     <header>
         <div class="card w-50 m-auto text-center">
-                <div class="card-header bg-danger text-white">LOVE CALCULATOR</div>
-                <div class="card-body">
-                    <form class="from-inline w-75 m-auto ">
-                        <div class="from-group">
-                            <input type="text" name=""class="from-control text-center" placeholder=" Your Name ">
-                        </div>
-                        <div><span class="pl-4 pr-4"> + </span></div>
-                        <div class="from-group">
-                            <input type="text" name=""class="from-control text-center" placeholder=" Love Name ">
-                        </div>
-
-                    </form>
-                    <br>
-                    <div class="w-75 m-auto">
-                        <button class="btn btn-success w-50" onclick="checkloveper()">Click</button>
-
+            <div class="card-header bg-danger text-white">LOVE CALCULATOR</div>
+            <div class="card-body">
+                <form class="from-inline w-75 m-auto ">
+                    <div class="from-group">
+                        <input type="text" name="" class="from-control text-center" placeholder=" Your Name ">
                     </div>
-                    <br>
-                    <div>
-                        <input type="text" name="" id="lovevalue" class="from-control text-center w-40 m-autos" placeholder="Love Percentage">
+                    <div><span class="pl-4 pr-4"> + </span></div>
+                    <div class="from-group">
+                        <input type="text" name="" class="from-control text-center" placeholder=" Love Name ">
                     </div>
 
+                </form>
+                <br>
+                <div class="w-75 m-auto">
+                    <button class="btn btn-success w-50" onclick="checkloveper()">Click</button>
 
                 </div>
-                <div class="card-footer">God Bless Your RelationShip</div>
-              </div> 
+                <br>
+                <div>
+                    <input type="text" name="" id="lovevalue" class="from-control text-center w-40 m-autos"
+                        placeholder="Love Percentage">
+                </div>
+
+
+            </div>
+            <div class="card-footer">God Bless Your RelationShip</div>
+        </div>
         </div>
     </header>
     <script>
-        function checkloveper(){
+        function checkloveper() {
             var lovedata = Math.random() * 100;
-            lovedata = math.floor(lovedata);
-            document.getElementById('lovevalue').value = lovedata + "%";
+            lovedata = Math.floor(lovedata);
+            document.getElementById('lovevalue').value = `${lovedata} %`;
         }
     </script>
 </body>
+
 </html>
